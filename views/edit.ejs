@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit <%= mongoose.name %></title>
+</head>
+<body>
+    <h1>Edit Here</h1>
+    <form action="/mongooses/<%= mongoose._id %>" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="<%= mongoose.name %>"><br>
+        <label for="age">Age:</label>
+        <input type="text" name="age" min="0" value="<%= mongoose.age %>"><br>
+        <label for="color">Color:</label>
+        <input type="text" name="color" value="<%= mongoose.color %>"><br>
+        <label for="food">Favorite Food:</label>
+        <input type="text" name="favoriteFood" value="<%= mongoose.favoriteFood %>" ><br>
+        <input type="submit" value="Edit Animal">
+    </form>
+</body>
+</html>

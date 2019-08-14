@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mongoose Dashboard</title>
+</head>
+<body>
+    <h1>Please register animal here</h1>
+    <form action="/mongooses" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Rin"><br>
+        <label for="age">Age:</label>
+        <input type="text" name="age" min="0"><br>
+        <label for="color">Color:</label>
+        <input type="text" name="color" placeholder="Blue"><br>
+        <label for="favoriteFood">Favorite Food:</label>
+        <input type="text" name="favoriteFood" placeholder="Grass"><br>
+        <input type="submit" value="Create Animal">
+    </form>
+</body>
+</html>
